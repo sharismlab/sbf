@@ -1,0 +1,58 @@
+{
+    "name": "sbf",
+    "author": "Sharism Lab",
+    "node": "0.6.12",
+    "version": "0.0.1",
+    "main": "./lib/sbf.coffee",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sharismlab/sbf.git"
+    },
+    "dependencies": {
+        "alchemy-api" : "latest",
+        "coffee-script": "latest",
+        "everyauth": "git://github.com/clemsos/everyauth.git",
+        "http-proxy": "latest",
+        "guesslanguage" : "latest",
+        "mongodb": ">= 0.9.6-7",
+        "mongoose": "3.2.0",
+        "mongoose-troop": "latest",
+        "mongoose-auth": "git://github.com/clemsos/mongoose-auth.git",
+        "node.io": "latest",
+        "nib": "0.4.1",
+        "jquery": "latest",
+        "ntwitter": "latest",
+        "querystring": "latest",
+        "request": "latest",
+        "redis": ">=0.7.1",
+        "socket.io": "latest",
+        "stylus": "0.27.0",
+        "weibo" : "latest",
+        "which": "*"
+    },
+    "devDependencies": {
+        "nodeunit": "*",
+        "assert": "*",
+        "sinon": "*",
+        "semicov": "*",
+        "mocha": "latest",
+        "chai": "latest",
+        "should": "*",
+        "request": "*",
+        "supervisor": "*",
+        "supertest": "latest",
+        "docco": "*"
+    },
+    "docco_husky": {
+        "output_dir": "/docs",
+        "project_name": "SBF (Social Brain Framework)",
+        "show_timestamp": true
+    },
+    "scripts": {
+        "test": "sudo cake test"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=0.6"
+    }
+}
