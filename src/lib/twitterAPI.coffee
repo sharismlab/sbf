@@ -8,7 +8,6 @@ tokSec=null
 
 # create a ntwitter element
 ntwitter = require 'ntwitter'
-apikeys = require '../../config/apikeys'
 
 # declare global vars
 ntwit = null
@@ -87,4 +86,4 @@ module.exports =
     getFollowers : getFollowers
     getTimeline : getTimeline
     getMentions : getMentions
-    lookupUsers : lookupUser
+    lookupUsers : lookupUsers

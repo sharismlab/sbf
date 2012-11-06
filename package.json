@@ -47,7 +47,9 @@
         "show_timestamp": true
     },
     "scripts": {
-        "test": "sudo cake test"
+        "test": "cake test",
+        "pretest": "cake compile:coffee", 
+        "prepublish": "cake compile:coffee"
     },
     "license": "MIT",
     "engines": {

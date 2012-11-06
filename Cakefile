@@ -16,14 +16,14 @@ Copyright(c) 2012, hashnote.net Alisue allright reserved.
 ###
 
 # --- CONFIGURE ---------------------------------------------------
-NAME              = "YOUR APPLICATION NAME"
+NAME              = "SOCIAL BRAIN FRAMEWORK"
 VERSION           = "0.1.0"
 CS_PATH           = "./src"
-JS_PATH           = "./app"
+JS_PATH           = "./lib"
 LESS_PATH         = "./src/less"
 CSS_PATH          = "./public/css"
-TEST_PATH         = './tests'
-CS_FILES          = ['app', "config", "locals", "routes"]
+TEST_PATH         = './test'
+CS_FILES          = ['sbf', "vendor/twitterAPI", "vendor/weiboAPI", "vendor/timelineFunctions"]
 LESS_FILES        = ['reset','style', 'layout']
 TEST_FILES        = ['app']
 YUI_COMPRESSOR    = "~/.yuicompressor/build/yuicompressor-2.4.7.jar"

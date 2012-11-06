@@ -9,20 +9,25 @@ sbf.routes = () ->
 	include "routes/api"
 
 # Twitter
+twitterAPI = require './lib/twitterAPI'
+sbf.twitter = twitterAPI
+
 sbf.twitter.init = (consumerKey, consumerSecret) ->
-    twitterAPI = require '../vendor/twitterAPI'
-    twitterAPI.loginToTwitter (consumerKey, consumerSecret)
-    this = twitterAPI
+    twitterAPI.loginToTwitter consumerKey, consumerSecret
+
+
 
 # Weibo
+weiboAPI = require './lib/weiboAPI'
+sbf.weibo = weiboAPI
+
 sbf.weibo.init = (consumerKey, consumerSecret) ->
-    weiboAPI = require '../vendor/weiboAPI'
-    weiboAPI.loginToWeibo (consumerKey, consumerSecret)
-    this = weiboAPI
+    weiboAPI.loginToWeibo consumerKey, consumerSecret
+
 
 # Analyze Timelines
 sbf.analyzeTimeline = (timeline, callback) ->
-    timelineFunctions = require '../vendor/timelineFunctions'
+    timelineFunctions = require './lib/timelineFunctions'
     events = timelineFunctions.eventEmitter
     timelineFunctions.analyzeTimeline timeline, callback(events)
 
