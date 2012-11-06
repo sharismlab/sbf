@@ -21,12 +21,15 @@ sbf.weibo.init = (consumerKey, consumerSecret) ->
     this = weiboAPI
 
 # Analyze Timelines
-
-
+sbf.analyzeTimeline = (timeline, callback) ->
+    timelineFunctions = require '../vendor/timelineFunctions'
+    events = timelineFunctions.eventEmitter
+    timelineFunctions.analyzeTimeline timeline, callback(events)
 
 # export methods
 module.exports =
 	# sbf: sbf
-	routes:sbf.routes
+	analyzeTimeline: sbf.analyzeTimeline
+    routes: sbf.routes
 	twitter : sbf.twitter
     weibo: sbf.weibo
