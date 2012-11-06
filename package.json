@@ -1,7 +1,7 @@
 {
     "name": "sbf",
     "author": "Sharism Lab",
-    "node": "0.6.12",
+    "node": "0.8.14",
     "version": "0.0.1",
     "main": "./lib/sbf.coffee",
     "repository": {

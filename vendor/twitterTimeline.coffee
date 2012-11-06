@@ -71,7 +71,6 @@ eventEmitter.on 'endAnalyzetweet', (tweet) ->
   if(timelineCount==2&&tweetsCount==totalTweets)
     eventEmitter.emit 'endAnalyzeTimeline'
 
-
 eventEmitter.on 'lookup', () ->
   
   console.log "lookup number "+ lookupCount

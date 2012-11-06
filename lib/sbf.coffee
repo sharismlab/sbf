@@ -1,22 +1,32 @@
 ## Main file for module
+
+# our object to be exported
 sbf = {}
 
+# enables api routing
+sbf.routes = () ->
+	include "express"
+	include "routes/api"
+
 # Twitter
-sbf.twitter = (consumerKey, consumerSecret) ->
+sbf.twitter.init = (consumerKey, consumerSecret) ->
     twitterAPI = require '../vendor/twitterAPI'
     twitterAPI.loginToTwitter (consumerKey, consumerSecret)
     this = twitterAPI
 
 # Weibo
-sbf.weibo = (consumerKey, consumerSecret) ->
+sbf.weibo.init = (consumerKey, consumerSecret) ->
     weiboAPI = require '../vendor/weiboAPI'
     weiboAPI.loginToWeibo (consumerKey, consumerSecret)
     this = weiboAPI
 
-# Create social neurons
+# Analyze Timelines
+
 
 
 # export methods
 module.exports =
-	twitter : twitter
-    weibo: weibo
+	# sbf: sbf
+	routes:sbf.routes
+	twitter : sbf.twitter
+    weibo: sbf.weibo

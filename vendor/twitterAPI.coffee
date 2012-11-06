@@ -32,7 +32,7 @@ verifyCredentials = () ->
         console.log(data);
     return
 
-#
+# Friendships
 getFollowers = (seuron, callback) ->
     if( seuron.sns.twitter.hasFollowers.check == false || seuron.sns.twitter.hasFollowers.last_updated < Date.now+30000)
         console.log "get followers !"
@@ -70,6 +70,7 @@ getMentions = (callback) ->
         # console.log data
         callback(data)
 
+# Get user profiles from Twitter API (100 by 100)
 lookupUsers = (ids, callback) ->
     console.log "need some users dude?"
     ntwit.lookupUsers ids, (err, data) ->
@@ -86,4 +87,4 @@ module.exports =
     getFollowers : getFollowers
     getTimeline : getTimeline
     getMentions : getMentions
-    lookupUsers : lookupUsers
+    lookupUsers : lookupUser
