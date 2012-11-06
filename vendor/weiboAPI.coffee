@@ -5,7 +5,6 @@
 
 
 weibo = require 'weibo'
-apikeys = require '../../config/apikeys'
 
 # Global vars to store info & accesstoken from everyauth
 user=null

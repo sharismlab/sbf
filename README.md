@@ -1,9 +1,9 @@
-**[SBF (Social Brain Framework)](http://node.io/) is a node module for extraction, mining and analysis of social networks streams that implements the model of a brain as a backbone **
+** [SBF (Social Brain Framework)](http://sharismlab.com/) is a node module for extraction, mining and analysis of social networks streams that implements the model of a brain as a backbone **
 
 - Jobs are written in Javascript or [Coffeescript](http://jashkenas.github.com/coffee-script/) and run in [Node.JS](http://nodejs.org/) - jobs are concise, asynchronous and _FAST_
 - Includes a robust framework for scraping, selecting and traversing data from social networks
 - Includes a data validation and sanitization framework
-- Easily handle a variety of input / output - files, databases, streams, stdin/stdout, etc.
+- Easily handle a variety of input / output - files, databases, streams, stdin/stdout, etc. from different sources and web services
 - Speed up execution by distributing work across multiple processes and (soon) other servers
 - Manage & run jobs through a web interface
 
