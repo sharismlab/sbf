@@ -12,16 +12,15 @@ sbf.routes = () ->
 twitterAPI = require './lib/twitterAPI'
 sbf.twitter = twitterAPI
 
-sbf.twitter.init = (consumerKey, consumerSecret) ->
+sbf.twitter.init = (consumerKey, consumerSecret, accessToken, tokenSecret) ->
     twitterAPI.loginToTwitter consumerKey, consumerSecret
-
 
 
 # Weibo
 weiboAPI = require './lib/weiboAPI'
 sbf.weibo = weiboAPI
 
-sbf.weibo.init = (consumerKey, consumerSecret) ->
+sbf.weibo.init = (consumerKey, consumerSecret, accessToken, tokenSecret) ->
     weiboAPI.loginToWeibo consumerKey, consumerSecret
 
 
